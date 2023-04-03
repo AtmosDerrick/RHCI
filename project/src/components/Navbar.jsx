@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Menu from "./Menu";
 
 function Navbar() {
@@ -9,7 +10,7 @@ function Navbar() {
   };
   return (
     <div className="w-full">
-      <div className="w-full h-[10vh] bg-gray-900 opacity-40 absolute "></div>
+      <div className="w-full h-[10vh] bg-gray-900  absolute "></div>
 
       <nav className="relative text-white w-3/4 mx-auto flex justify-between">
         <div className="py-2 flex justify-start w-full">
@@ -25,12 +26,12 @@ function Navbar() {
           </div>
         </div>
 
-        <div className="text-lg font-medium w-2/4 py-4">
+        <div className="text-lg font-medium w-3/4 py-4">
           <ul className="flex justify-evenly">
-            <li>Home</li>
-            <li>Who we are</li>
-            <li>Contact</li>
-            <li>Giving</li>
+            <Link to="/"><li className="mx-4">Home</li></Link>
+            <Link to="/about"><li className="mx-4">Who we are</li></Link>
+            <Link><li className="mx-4">Contact</li></Link>
+            <Link><li className="mx-4">Giving</li></Link>
             <div className=" text-xl text-blue-500" onClick={toggleMenu}>
               <i class="fa-solid fa-bars fa-2x"></i>
             </div>

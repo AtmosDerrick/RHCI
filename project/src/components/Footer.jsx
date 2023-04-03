@@ -22,7 +22,7 @@ function Footer() {
             <li className="mx-4">Services</li>
           </ul>
         </div>
-        <div className="grid grid-cols-3 mt-4">
+        <div className="grid grid-cols-2 mt-4">
           <div className="w-full">
             <div className="text-base">Follow us on social media</div>
             <ul className="flex justify-left pt-4">
@@ -37,7 +37,7 @@ function Footer() {
               </li>
             </ul>
 
-            <div className="w-full flex between text-lg  my-4">
+            <div className="w-full flex justify-between text-base  my-4">
               <div className="w-1/4">
                 <i class="fa-solid fa-house-chimney "></i>
               </div>
@@ -70,9 +70,6 @@ function Footer() {
           <div className="mx-4 h">
             <Map />
           </div>
-          <diV className="form">
-            <Form />
-          </diV>
         </div>
       </div>
     </footer>

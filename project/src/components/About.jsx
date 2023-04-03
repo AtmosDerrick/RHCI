@@ -16,7 +16,7 @@ function About() {
           className="w-[20rem] h-[20rem] ml-[-10rem] mt-24 shadow-xl rounded-lg "
         />
       </div>
-      <div className="w-full text-lg text-gray-800 py-4 leading-8">
+      <div className="w-full text-base text-gray-800 py-4 leading-8">
         <h2 className="text-left text-2xl font-serif font-semibold text-blue-700 uppercase border-l-4 pl-4 border-l-yellow-500">
           About
         </h2>
@@ -37,7 +37,7 @@ function About() {
           Voluptate elit sint reprehenderit labore mollit occaecat.
           Reprehenderit aute dolore et tempor do. Deserunt enim magna excepteur
           ex quis nulla non consectetur aute ad aliqua incididunt sint dolor.
-          sint reprehenderit labore mollit
+          sint reprehenderit labore mol
         </p>
         <div>
           <button className="bg-blue-500 shadow-lg text-lg text-center text-white py-2 px-8 font-medium rounded-full mt-4 hover:opacity-70 hover:shadow-md hover:transition-all">
