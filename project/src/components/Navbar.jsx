@@ -28,10 +28,18 @@ function Navbar() {
 
         <div className="text-lg font-medium w-3/4 py-4">
           <ul className="flex justify-evenly">
-            <Link to="/"><li className="mx-4">Home</li></Link>
-            <Link to="/about"><li className="mx-4">Who we are</li></Link>
-            <Link><li className="mx-4">Contact</li></Link>
-            <Link><li className="mx-4">Giving</li></Link>
+            <Link to="/">
+              <li className="mx-4">Home</li>
+            </Link>
+            <Link to="/about">
+              <li className="mx-4">Who we are</li>
+            </Link>
+            <a href="#footer">
+              <li className="mx-4">Contact</li>
+            </a>
+            <Link to="/giving">
+              <li className="mx-4">Giving</li>
+            </Link>
             <div className=" text-xl text-blue-500" onClick={toggleMenu}>
               <i class="fa-solid fa-bars fa-2x"></i>
             </div>

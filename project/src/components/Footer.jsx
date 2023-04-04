@@ -4,7 +4,7 @@ import Form from "./Form";
 
 function Footer() {
   return (
-    <footer className="w-full h-[80vh] bg-gray-900 mt-4 ">
+    <footer className="w-full h-[80vh] bg-gray-900 mt-4 " id="footer">
       <div className="w-3/4 mx-auto absolute ">
         <img
           src="./images/world-map.png"

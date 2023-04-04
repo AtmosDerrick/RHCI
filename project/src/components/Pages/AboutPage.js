@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import Copyright from "../Copyright";
 
 function AboutPage() {
   return (
@@ -199,6 +200,7 @@ function AboutPage() {
         </div>
       </div>
       <Footer />
+      <Copyright />
     </div>
   );
 }

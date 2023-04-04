@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -40,9 +41,11 @@ function About() {
           sint reprehenderit labore mol
         </p>
         <div>
-          <button className="bg-blue-500 shadow-lg text-lg text-center text-white py-2 px-8 font-medium rounded-full mt-4 hover:opacity-70 hover:shadow-md hover:transition-all">
-            Learn More
-          </button>
+          <Link to="/about">
+            <button className="bg-blue-500 shadow-lg text-lg text-center text-white py-2 px-8 font-medium rounded-full mt-4 hover:opacity-70 hover:shadow-md hover:transition-all">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
     </div>
