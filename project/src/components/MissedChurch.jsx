@@ -4,13 +4,13 @@ import "../style/missedchurchstyle.css";
 function MissedChurch() {
   return (
     <div className="shadow-lg bg-gray-100 mt-4">
-      <div className=" relative w-3/4 mx-auto flex justify-between pt-12">
+      <div className=" relative w-full px-4 xl:px-0 xl:w-3/4 mx-auto md:flex md:justify-between pt-12">
         <div className="uppercase text-gray-900  font-bold w-full text-center pt-12 ">
           <div className="text-center text-2xl bg-gray-900 text-gray-100 py-2 px-8">
             Join our
           </div>
           <div className=" ">
-            <span className="text-[7rem] font-bold text-yellow-500 drop-shadow-lg">
+            <span className="text-5xl md:text-[7rem] font-bold text-yellow-500 drop-shadow-lg">
               Online{" "}
             </span>{" "}
             <br></br>

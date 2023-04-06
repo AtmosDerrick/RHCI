@@ -1,17 +1,18 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import Copyright from "../Copyright";
 
 function Conference() {
   return (
     <div>
       <Navbar />
       <div className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 h-[10vh] ">
-        <div className=" w-3/4 mx-auto py-4 text-xl uppercase  flex items-center font-mono font-bold text-white drop-shadow-md ">
+        <div className="  w-full px-4 xl:px-0 xl:w-3/4 mx-auto py-4 text:lg md:text-xl uppercase  flex items-center font-mono font-bold text-white drop-shadow-md ">
           <div>Conference and Events</div>
         </div>
       </div>
-      <div className="w-3/4 mx-auto grid grid-cols-3 gap-4 mt-4">
+      <div className="w-full mx-2 xl:w-3/4 xl:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         <div className="w-full h-[10rem] bg-gray-200 px-4 rounded-lg shadow-lg">
           <div>
             <span>
@@ -128,6 +129,7 @@ function Conference() {
         </div>
       </div>
       <Footer />
+      <Copyright />
     </div>
   );
 }
