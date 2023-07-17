@@ -3,22 +3,22 @@ import "../style/missedchurchstyle.css";
 
 function MissedChurch() {
   return (
-    <div className="shadow-lg bg-gray-100 mt-4">
+    <div className="shadow-lg bg-gray-100 mt-4 bg-opacity-90" id="missed">
       <div className=" relative w-full px-4 xl:px-0 xl:w-3/4 mx-auto md:flex md:justify-between pt-12">
         <div className="uppercase text-gray-900  font-bold w-full text-center pt-12 ">
-          <div className="text-center text-2xl bg-gray-900 text-gray-100 py-2 px-8">
+          <div className="text-center text-lg  md:text-2xl bg-gradient-to-r from-sky-600 via-sky-900 to-sky-900 text-gray-100 py-2 px-8">
             Join our
           </div>
-          <div className=" ">
-            <span className="text-5xl md:text-[7rem] font-bold text-yellow-500 drop-shadow-lg">
+          <div className="w-full ">
+            <span className="text-2xl md:text-5xl md:text-[7rem] font-bold text-yellow-500 drop-shadow-lg">
               Online{" "}
             </span>{" "}
             <br></br>
-            <span className="text-5xl font-meduim text-gray-900">
+            <span className="text-4xl md:text-5xl font-meduim text-gray-900">
               Streaming{" "}
             </span>
             <br></br>
-            <span className="text-4xl font-meduim text-gray-100">Service</span>
+            <span className="text-4xl font-meduim text-gray-800">Service</span>
           </div>
           <div className="w-full mx-auto flex justify-center mt-4">
             <div className="flex justify-center text-yellow-500 mr-4">
@@ -29,12 +29,17 @@ function MissedChurch() {
                 <i class="fa-brands fa-youtube fa-2x drop-shadow-lg text-gray-900"></i>
               </div>
             </div>
-            <div className="text-sm">
+            <div className="text-xs md:text-sm flex justify-center w-full">
               Reach Heaven Church Int. Or @reachheavenchurchint.
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-center sentencecase">
+        <div
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          className="w-full flex justify-center sentencecase">
           <img
             src="./images/phone1.png"
             alt="Reach Heaven Phone"

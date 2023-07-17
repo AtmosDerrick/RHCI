@@ -8,19 +8,28 @@ import RandomPic from "./RandomPic";
 import Footer from "./Footer";
 import Watsupchat from "./Watsupchat";
 import Copyright from "./Copyright";
+import Event from "./Event";
+import "../style/landingStyle.css";
+import NewLanding from "./NewLanding";
+import FounderMessage from "./FounderMessage";
 
 function Home() {
   return (
     <div>
-      <LandingPage />
-      <WelcomeMessage />
+      <NewLanding />
+
+      <div id="jesusloveyou">
+        <Event />
+        <WelcomeMessage />
+      </div>
       <div className="w-full xl:w-3/4 mx-auto px-4 xl:px-0">
         <About />
         <RecentService />
       </div>
       <MissedChurch />
-      <RandomPic />
+
       <Watsupchat />
+      <FounderMessage />
 
       <Footer />
       <Copyright />

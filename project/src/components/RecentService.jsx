@@ -11,11 +11,11 @@ function RecentService() {
       <h2 className="text-left text-2xl font-serif font-semibold text-blue-700 uppercase border-l-4 pl-4 border-l-yellow-500">
         Recent Services
       </h2>
-      <div className="text-left text-lg text-gray-800 font-medium italic">
+      <div className="text-left text-sm md:text-lg text-gray-800 font-medium italic">
         Experiencing God's Presence: A Recap of our Recent Service
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-2 gap-2">
-        <div className={style.recentServices}>
+        <div className={style.recentServices} data-aos="flip-left">
           <iframe
             width="350"
             height="190"
@@ -26,7 +26,7 @@ function RecentService() {
             allowfullscreen></iframe>
           <div></div>
         </div>
-        <div className={style.recentServices}>
+        <div className={style.recentServices} data-aos="flip-left">
           <iframe
             width="350"
             height="190"
@@ -36,7 +36,7 @@ function RecentService() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
         </div>
-        <div className={style.recentServices}>
+        <div className={style.recentServices} data-aos="flip-left">
           <iframe
             width="350"
             height="190"
@@ -46,7 +46,7 @@ function RecentService() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
         </div>
-        <div className={style.recentServices}>
+        <div className={style.recentServices} data-aos="flip-left">
           <iframe
             width="350"
             height="190"
@@ -59,8 +59,8 @@ function RecentService() {
       </div>
 
       {moreVideos ? (
-        <div className="grid grid-cols-4 py-2 gap-2">
-          <div className={style.recentServices}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-2 gap-2">
+          <div className={style.recentServices} data-aos="flip-left">
             <iframe
               width="350"
               height="190"
@@ -70,7 +70,7 @@ function RecentService() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-          <div className={style.recentServices}>
+          <div className={style.recentServices} data-aos="flip-left">
             <iframe
               width="350"
               height="190"
@@ -80,7 +80,7 @@ function RecentService() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-          <div className={style.recentServices}>
+          <div className={style.recentServices} data-aos="flip-left">
             <iframe
               width="350"
               height="190"
@@ -90,7 +90,7 @@ function RecentService() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-          <div className={style.recentServices}>
+          <div className={style.recentServices} data-aos="flip-left">
             <iframe
               width="350"
               height="190"
