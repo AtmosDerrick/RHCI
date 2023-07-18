@@ -2,9 +2,11 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/Auth";
 import Footer from "../Footer";
 import EventAndAnouncement from "../Admin/EventAndAnouncement";
+import SermonAchive from "./SermonAchive";
 
 function Admin() {
   const { currentUser, logOut } = useContext(AuthContext);
+  const [actionType, setActionType] = useState("event");
 
   const [activeEvent, setActiveEvent] = useState(false);
   const handleSignOut = async () => {
@@ -15,8 +17,14 @@ function Admin() {
     }
   };
 
-  const EventAndAnnouncements = () => {
-    setActiveEvent(!activeEvent);
+  const action = (type) => {
+    switch (type) {
+      case "event":
+        setActionType("event");
+        break;
+      case "sermon":
+        setActionType("sermon");
+    }
   };
 
   return (
@@ -26,10 +34,16 @@ function Admin() {
           <div className=" mt-4 px-4 flex gap-2">
             <button
               className="w-full text-center hover:opacity-60 bg-sky-100 py-2 px-2 text-sky-800 font-semibold  text-xl mt-4"
-              onClick={EventAndAnnouncements}>
+              onClick={() => {
+                action("event");
+              }}>
               Events and Announcements
             </button>
-            <button className="w-full text-center hover:opacity-60 bg-sky-100 py-2 px-2 text-sky-800 font-semibold  text-xl mt-4">
+            <button
+              className="w-full text-center hover:opacity-60 bg-sky-100 py-2 px-2 text-sky-800 font-semibold  text-xl mt-4"
+              onClick={() => {
+                action("sermon");
+              }}>
               Sermon Achieve
             </button>
             <button className="w-full text-center hover:opacity-60 bg-sky-100 py-2 px-2 text-sky-800 font-semibold  text-xl mt-4">
@@ -41,7 +55,13 @@ function Admin() {
           </div>
         </div>
         <div className="w-full h-[70vh] mb-12 overflow-visible">
-          {activeEvent && <EventAndAnouncement />}
+          {actionType === "event" ? (
+            <EventAndAnouncement />
+          ) : actionType === "sermon" ? (
+            <SermonAchive />
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <Footer />
