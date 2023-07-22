@@ -3,6 +3,7 @@ import { AuthContext } from "../../context/Auth";
 import Footer from "../Footer";
 import EventAndAnouncement from "../Admin/EventAndAnouncement";
 import SermonAchive from "./SermonAchive";
+import Membership from "../Admin/Membership";
 
 function Admin() {
   const { currentUser, logOut } = useContext(AuthContext);
@@ -24,6 +25,9 @@ function Admin() {
         break;
       case "sermon":
         setActionType("sermon");
+        break;
+      case "membership":
+        setActionType("membership");
     }
   };
 
@@ -46,11 +50,13 @@ function Admin() {
               }}>
               Sermon Achieve
             </button>
-            <button className="w-full text-center hover:opacity-60 bg-sky-100 py-2 px-2 text-sky-800 font-semibold  text-xl mt-4">
-              Pray Requests
-            </button>
-            <button className="w-full text-center hover:opacity-60 bg-sky-100 py-2 px-2 text-sky-800 font-semibold  text-xl mt-4">
-              Online Membership
+
+            <button
+              className="w-full text-center hover:opacity-60 bg-sky-100 py-2 px-2 text-sky-800 font-semibold  text-xl mt-4"
+              onClick={() => {
+                action("membership");
+              }}>
+              Membership
             </button>
           </div>
         </div>
@@ -59,6 +65,8 @@ function Admin() {
             <EventAndAnouncement />
           ) : actionType === "sermon" ? (
             <SermonAchive />
+          ) : actionType === "membership" ? (
+            <Membership />
           ) : (
             ""
           )}
