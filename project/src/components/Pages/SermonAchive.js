@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+import { database } from "../../Firebase";
+import { ref, update } from "firebase/database";
+import { v4 as uuidv4, v5 as uuidv5 } from "uuid";
+import { getDatabase, onValue } from "firebase/database";
 
 function SermonAchive() {
   const [url, setUrl] = useState("");
+  const uuid = uuidv4();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -9,6 +14,13 @@ function SermonAchive() {
     // Handle form submission
     // You can perform validation or further processing here
     console.log("Submitted URL:", url);
+    const updates = {};
+    updates["/sermon/" + uuid] = { uuid, url };
+
+    update(ref(database), updates);
+    // Add your logic here to handle the form submission (e.g., send data to the server).
+    // For this example, we'll just log the values to the console.
+    console.log({ url });
 
     // Reset the form
     setUrl("");
