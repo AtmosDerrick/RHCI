@@ -51,7 +51,7 @@ function EventAndAnouncement() {
 
   console.log("lllll");
   return (
-    <div className="w-3/4 mx-auto mt-4 p-4  ">
+    <div className="w-full md:w-3/4 mx-auto mt-4 p-4  ">
       {eventActive ? (
         <div className=" w-1/2 bg-yellow-400 mx-auto z-40">
           <div className="w-1/2 ml-[-100px]  h-auto absolute z-30">
