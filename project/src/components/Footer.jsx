@@ -63,7 +63,7 @@ function Footer() {
                   <span className="text-yellow-500">
                     <i class="fa-solid fa-phone  pr-2"></i>
                   </span>
-                  054 - 145 - 9526
+                  059 - 145 - 9526
                 </div>
               </div>
             </div>
